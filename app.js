@@ -1,13 +1,11 @@
 const path = require('path');
-const bodyParser = require('body-parser');
 const express = require("express");
 const app = express();
 
 const port = 3000
 
-app.use(bodyParser.urlencoded({extended: false}));
 app.use(express.static(path.join(__dirname, 'public')));
-
+app.use(express.urlencoded({ extended: true }));
 
 
 
@@ -18,7 +16,11 @@ app.get('/', (req, res, next) => {
 
 
 app.post('/', (req, res, next) => {
-  console.log(req.body);
+  console.log(req.body.name);
+  console.log(req.body.email);
+  console.log(req.body.subject);
+  console.log(req.body.message);
+  res.redirect('/');
 })
 
 app.use((req, res, next) => {
