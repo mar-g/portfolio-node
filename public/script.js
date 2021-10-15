@@ -395,17 +395,18 @@ const checkLength = (input, min) => {
 };
 
 const checkEmail = (input) => {
-  const regEx = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+  const regEx =
+    /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
-  if(regEx.test(input.value.trim())) {
+  if (regEx.test(input.value.trim())) {
     success(input);
   } else {
     error(input, "Email is not valid");
   }
-}
+};
 
 form.addEventListener("submit", (e) => {
-
+  e.preventDefault();
   checkLength(username, 2);
   checkLength(subject, 2);
   checkLength(message, 10);
@@ -414,9 +415,23 @@ form.addEventListener("submit", (e) => {
 
   const notValid = Array.from(messages).find((message) => {
     return message.classList.contains("error");
-  })
+  });
 
-  notValid && e.preventDefault();
+  const sendForm = () => {
+    let formData = {
+      name: username.value,
+      email: email.value,
+      subject: subject.value,
+      message: message.value,
+    };
+
+    let xhr = new XMLHttpRequest();
+    xhr.open("POST", "/");
+    xhr.setRequestHeader("content-type", "application/json");
+    xhr.send(JSON.stringify(formData));
+  };
+
+  !notValid && sendForm();
 });
 // End of Form Validation
 // End of Section 5

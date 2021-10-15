@@ -6,7 +6,7 @@ const port = 3000
 
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.urlencoded({ extended: true }));
-
+app.use(express.json());
 
 
 
@@ -20,7 +20,7 @@ app.post('/', (req, res, next) => {
   console.log(req.body.email);
   console.log(req.body.subject);
   console.log(req.body.message);
-  res.redirect('/');
+  res.end();
 })
 
 app.use((req, res, next) => {
