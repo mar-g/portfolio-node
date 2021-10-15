@@ -428,6 +428,15 @@ form.addEventListener("submit", (e) => {
     let xhr = new XMLHttpRequest();
     xhr.open("POST", "/");
     xhr.setRequestHeader("content-type", "application/json");
+    xhr.onreadystatechange = function () {
+      if (this.readyState == 4 && this.status == 200) {
+        console.log("OK");
+        username.value = "";
+        email.value = "";
+        subject.value = "";
+        message.value = "";
+      }
+    };
     xhr.send(JSON.stringify(formData));
   };
 
