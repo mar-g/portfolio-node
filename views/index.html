@@ -230,7 +230,7 @@
       <!-- Form -->
       <div class="form-wrapper">
         <h2 class="form-heading">Let`s Talk</h2>
-        <form class="contact-form center" action="POST">
+        <form class="contact-form center" action="/" method="POST">
           <input
             type="text"
             class="contact-form-input"
@@ -246,6 +246,7 @@
             placeholder="Email"
             id="email"
             autocomplete="off"
+            name="email"
           />
           <p class="message">Error Message</p>
           <input
@@ -254,6 +255,7 @@
             placeholder="Subject"
             id="subject"
             autocomplete="off"
+            name="subject"
           />
           <p class="message">Error Message</p>
           <textarea
@@ -261,6 +263,7 @@
             placeholder="Message"
             id="message"
             autocomplete="off"
+            name="message"
           ></textarea>
           <p class="message">Error Message</p>
           <input type="submit" class="form-submit-btn" value="Send Request" />
