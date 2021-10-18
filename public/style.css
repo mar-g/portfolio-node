@@ -778,7 +778,7 @@ html {
   margin: 0 auto 1rem 0;
   visibility: hidden;
   opacity: 0;
-  transition: opacity .3s;
+  transition: opacity 0.3s;
 }
 
 .error.message {
@@ -828,7 +828,6 @@ html {
 
 /* End of Slideshow */
 /* End of Section 5 */
-
 
 /* Responsive */
 
@@ -993,7 +992,7 @@ html {
   }
 }
 
-@media (max-width: 550px) {
+@media (max-width: 600px) {
   html {
     font-size: 40%;
   }
@@ -1025,13 +1024,13 @@ html {
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 480px) {
   html {
     font-size: 35%;
   }
 
   .logo {
-    font-size: 1.7rem;
+    font-size: 1.6rem;
     top: 13rem;
     left: 50%;
     transform: translateX(-50%);
