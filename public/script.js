@@ -112,7 +112,7 @@ const progressBarFn = (bigImgWrapper) => {
     el.style.transform = `rotate(${scrolledPortionDegree}deg)`;
 
     if (scrolledPortionDegree >= 180) {
-      halfCircles[0].style.transform = "rotate(180deg";
+      halfCircles[0].style.transform = "rotate(180deg)";
       halfCirclesTop.style.opacity = "0";
     } else {
       halfCirclesTop.style.opacity = "1";
@@ -368,6 +368,7 @@ const email = document.getElementById("email");
 const subject = document.getElementById("subject");
 const message = document.getElementById("message");
 const messages = document.querySelectorAll(".message");
+const submit = document.querySelector(".form-submit-btn");
 
 const error = (input, message) => {
   input.nextElementSibling.classList.add("error");
@@ -430,7 +431,15 @@ form.addEventListener("submit", (e) => {
     xhr.setRequestHeader("content-type", "application/json");
     xhr.onreadystatechange = function () {
       if (this.readyState == 4 && this.status == 200) {
-        console.log("OK");
+        submit.nextElementSibling.style.visibility = "visible";
+        submit.nextElementSibling.style.opacity = "1";
+        submit.nextElementSibling.textContent = "Email sent";
+
+        setTimeout(() => {
+          submit.nextElementSibling.style.visibility = "hidden";
+          submit.nextElementSibling.style.opacity = "0";
+        }, 2000);
+
         username.value = "";
         email.value = "";
         subject.value = "";

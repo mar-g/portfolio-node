@@ -765,6 +765,7 @@ html {
   align-self: flex-start;
   font-size: 1.8rem;
   color: #fff;
+  margin-bottom: 1rem;
 }
 
 /* Form Validation */
