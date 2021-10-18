@@ -190,7 +190,7 @@ Array.from(aboutMeTextContent).forEach((char) => {
   span.textContent = char;
   aboutMeText.appendChild(span);
   span.addEventListener("mouseenter", (e) => {
-    e.target.style.animation = "aboutMeTextAnim 10s infinite";
+    e.target.style.animation = "aboutMeTextAnim 3s infinite";
   });
 });
 //End of About Me Text

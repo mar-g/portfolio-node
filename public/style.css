@@ -454,29 +454,100 @@ html {
 
 .about-me-text span {
   font-family: "Poppins", sans-serif;
-  font-size: 15rem;
-  font-weight: bold;
-  color: #aaa;
+  font-size: 10rem;
+  /* font-weight: bold; */
+  color: #808080;
   letter-spacing: 0.5rem;
   line-height: 0.9;
   text-shadow: 0 0 1rem #9b0e0e;
   position: relative;
-  mix-blend-mode: color-dodge;
+  /* mix-blend-mode: color-dodge; */
 }
 
 @keyframes aboutMeTextAnim {
   0% {
-    color: #aaa;
-    top: 0;
+    color: #8c8c8c;
+    /* top: 0; */
   }
-  10%,
+  5% {
+    color: #999999;
+    /* top: 0.5rem; */
+  }
+  10% {
+    color:#a6a6a6;
+    /* top: 1rem; */
+  }
+  15% {
+    color:#b2b2b2;
+    /* top: 1.3rem; */
+  }
+  20% {
+    color:#bfbfbf;
+    /* top: 0.7rem; */
+  }
+  25% {
+    color:#cccccc;
+    /* top: 0; */
+  }
+  30% {
+    color:#d8d8d8;
+    /* top: 0; */
+  }
+  35% {
+    color:#e5e5e5;
+    /* top: 0; */
+  }
+  40% {
+    color:#f2f2f2;
+    /* top: 0; */
+  }
+  45% {
+    color:#ffffff;
+    /* top: 0; */
+  }
+  50% {
+    color:#ffffff;
+    /* top: 0; */
+  }
+  55% {
+    color: #ffffff;
+    /* top: 0; */
+  }
+  60% {
+    color: #f2f2f2;
+    /* top: 0.5rem; */
+  }
+  65% {
+    color:#e5e5e5;
+    /* top: 1rem; */
+  }
+  70% {
+    color:#d8d8d8;
+    /* top: 1.3rem; */
+  }
+  75% {
+    color:#cccccc;
+    /* top: 0.7rem; */
+  }
+  80% {
+    color:#bfbfbf;
+    /* top: 0; */
+  }
+  85% {
+    color:#b2b2b2;
+    /* top: 0; */
+  }
   90% {
-    color: #fff;
-    top: 2rem;
+    color:#a6a6a6;
+    /* top: 0; */
+  }
+  95% {
+    color:#999999;
+    /* top: 0; */
   }
   100% {
-    color: #aaa;
-    top: 0;
+    color:#8c8c8c;
+    /* top: 0; */
   }
 }
 /* End of About Me Text */
@@ -690,8 +761,8 @@ html {
 
 .service-btn span {
   font-family: "Poppins", sans-serif;
-  font-size: 10rem;
-  font-style: italic;
+  font-size: 8rem;
+  /* font-style: italic; */
   font-weight: bold;
   color: #9b0e0e;
   position: absolute;
