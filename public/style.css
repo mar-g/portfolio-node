@@ -311,6 +311,10 @@ html {
   text-shadow: 0 0.3rem 0.5rem #000;
 }
 
+.navbar-link:hover {
+  border-bottom: 0.5rem solid #9b0e0e;
+}
+
 .hide-navbar {
   opacity: 0;
   visibility: hidden;
