@@ -920,8 +920,8 @@ html {
   }
 
   .main-circle:hover {
-    width: 55rem;
-    height: 55rem;
+    width: 65rem;
+    height: 65rem;
   }
 
   /* .main-circle img {
@@ -982,13 +982,13 @@ html {
   }
 
   .main-circle {
-    width: 50rem;
-    height: 50rem;
+    width: 35rem;
+    height: 35rem;
   }
 
   .main-circle:hover {
-    width: 65rem;
-    height: 65rem;
+    width: 55rem;
+    height: 55rem;
   }
 
   .about-me-text span {
@@ -1120,11 +1120,13 @@ html {
   }
 
   .main-circle {
-    width: 38rem;
+    width: 25rem;
+    height: 25rem;
   }
 
   .main-circle:hover {
-    width: 42rem;
+    width: 45rem;
+    height: 45rem;
   }
 
   /* .main-circle img {
