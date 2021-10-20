@@ -438,7 +438,7 @@ form.addEventListener("submit", (e) => {
         setTimeout(() => {
           submit.nextElementSibling.style.visibility = "hidden";
           submit.nextElementSibling.style.opacity = "0";
-        }, 2000);
+        }, 4000);
 
         username.value = "";
         email.value = "";
