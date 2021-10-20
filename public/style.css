@@ -366,32 +366,35 @@ html {
 
 .circle-1 {
   background: url(https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg) center no-repeat;
-  background-size: 75%;
+  background-size: 60%;
   /* background-clip: content-box; */
   /* border: 0.5rem dotted #a14b1a; */
-  margin-left: -10rem;
+  /* margin-left: -10rem; */
 }
 
 .circle-2 {
   background: url(https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg) center no-repeat;
-  background-size: 70%;
+  background-size: 60%;
   /* background-clip: content-box; */
   /* border: 0.5rem dashed #ffbd07; */
+  /* border: 0.5rem dotted #a14b1a; */
 }
 
 .circle-3 {
   background: url(https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg) center no-repeat;
-  background-size: 90%;
+  background-size: 70%;
   /* background-clip: content-box; */
   /* border: 1rem double #9b0e0e; */
+  /* border: 0.5rem dotted #a14b1a; */
 }
 
 .circle-4 {
-  background: url(https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original-wordmark.svg) center no-repeat;
-  background-size: contain;
+  background: url(https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg) center no-repeat;
+  background-size: 70%;
   /* background-clip: content-box; */
   /* border: 0.7rem double #fff; */
-  margin-right: -10rem;
+  /* border: 0.5rem dotted #a14b1a; */
+  /* margin-right: -10rem; */
 }
 
 .main-circle {
@@ -409,12 +412,15 @@ html {
 }
 
 .main-circle img {
-  mix-blend-mode: color-dodge;
+  /* mix-blend-mode: screen; */
   position: relative;
   transition: left 2s, top 2s;
   top: 0;
   left: 0;
 }
+
+
+
 /* End of Animated Circles */
 
 /* Featured Text */
@@ -904,8 +910,8 @@ html {
 
 @media (max-width: 1600px) {
   .circle {
-    width: 20rem;
-    height: 20rem;
+    width: 25rem;
+    height: 25rem;
   }
 
   .main-circle {
@@ -918,10 +924,10 @@ html {
     height: 55rem;
   }
 
-  .main-circle img {
-    width: 160%;
-    height: 160%;
-  }
+  /* .main-circle img {
+    width: 50%;
+    height: 200%;
+  } */
 
   .about-me-text span {
     font-size: 11rem;
@@ -976,13 +982,13 @@ html {
   }
 
   .main-circle {
-    width: 40rem;
-    height: 40rem;
+    width: 50rem;
+    height: 50rem;
   }
 
   .main-circle:hover {
-    width: 45rem;
-    height: 45rem;
+    width: 65rem;
+    height: 65rem;
   }
 
   .about-me-text span {
@@ -1069,10 +1075,10 @@ html {
     font-size: 40%;
   }
 
-  .main-circle img {
+  /* .main-circle img {
     width: 180%;
     height: 180%;
-  }
+  } */
 
   .service-btn span {
     font-size: 4.5rem;
@@ -1121,10 +1127,10 @@ html {
     width: 42rem;
   }
 
-  .main-circle img {
+  /* .main-circle img {
     width: 200%;
     height: 200%;
-  }
+  } */
 
   .form-heading {
     font-size: 5rem;
