@@ -402,18 +402,18 @@ html {
 }
 
 .main-circle {
-  width: 55rem;
-  height: 55rem;
+  width: 50rem;
+  height: 50rem;
   position: absolute;
   overflow: hidden;
   border-radius: 50%;
   transition: width 0.2s, height 0.2s;
 }
 
-.main-circle:hover {
+/* .main-circle:hover {
   width: 75rem;
   height: 75rem;
-}
+} */
 
 .main-circle img {
   /* mix-blend-mode: screen; */
@@ -913,21 +913,29 @@ html {
 
 /* Responsive */
 
+@media (min-width: 1150px) {
+  .main-circle:hover {
+  width: 70rem;
+  height: 70rem;
+}
+}
+
+
 @media (max-width: 1600px) {
   .circle {
     width: 25rem;
     height: 25rem;
   }
-
+/* 
   .main-circle {
-    width: 45rem;
-    height: 45rem;
-  }
+    width: 60rem;
+    height: 60rem;
+  } */
 
-  .main-circle:hover {
+  /* .main-circle:hover {
     width: 65rem;
     height: 65rem;
-  }
+  } */
 
   /* .main-circle img {
     width: 50%;
@@ -970,8 +978,13 @@ html {
 
 @media (max-width: 1150px) {
   html {
-    font-size: 55%;
+    font-size: 56%;
   }
+
+  /* .main-circle img {
+    width: 200%;
+    height: 200%;
+  } */
 
   .circle {
     display: none;
@@ -986,15 +999,15 @@ html {
     margin: 0 2rem;
   }
 
-  .main-circle {
+  /* .main-circle {
     width: 35rem;
     height: 35rem;
-  }
+  } */
 
-  .main-circle:hover {
+  /* .main-circle:hover {
     width: 55rem;
     height: 55rem;
-  }
+  } */
 
   .about-me-text span {
     font-size: 7.5rem;
@@ -1029,6 +1042,10 @@ html {
   /* .menu-icon {
     right: -4rem;
   } */
+
+  html {
+    font-size: 52%;
+  }
 
   .navbar-link {
     font-size: 1.5rem;
@@ -1065,7 +1082,7 @@ html {
   }
 }
 
-@media (max-width: 700px) {
+/* @media (max-width: 700px) {
   html {
     font-size: 50%;
   }
@@ -1073,12 +1090,17 @@ html {
   .contact-form-input {
     width: 50rem;
   }
-}
+} */
 
-@media (max-width: 600px) {
+@media (max-width: 690px) {
   html {
-    font-size: 40%;
+    font-size: 48%;
   }
+
+  /* .main-circle {
+    width: 47rem;
+    height: 47rem;
+  } */
 
   /* .main-circle img {
     width: 180%;
@@ -1107,9 +1129,9 @@ html {
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 590px) {
   html {
-    font-size: 35%;
+    font-size: 47%;
   }
 
   .logo {
@@ -1124,15 +1146,15 @@ html {
     padding: 0;
   }
 
-  .main-circle {
-    width: 25rem;
-    height: 25rem;
-  }
+  /* .main-circle {
+    width: 32rem;
+    height: 32rem;
+  } */
 
-  .main-circle:hover {
+  /* .main-circle:hover {
     width: 45rem;
     height: 45rem;
-  }
+  } */
 
   /* .main-circle img {
     width: 200%;
