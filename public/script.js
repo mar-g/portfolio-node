@@ -78,7 +78,6 @@ mainBtns.forEach((btn) => {
     btn.removeChild(ripple);
   });
 });
-
 // End of Main Button
 
 // Progres Bar
@@ -153,7 +152,6 @@ progressBar.addEventListener("click", (e) => {
 // End of Progress Bar Click
 
 progressBarFn();
-
 // End of Progres Bar
 
 // Navigation
@@ -243,7 +241,6 @@ projects.forEach((project, i) => {
       progressBarFn();
     };
   });
-
   // End of Big Project Image
 
   if (i >= 6) {
@@ -338,7 +335,6 @@ formInputs.forEach((input) => {
 // End of Form
 
 // Slideshow
-
 const slideshow = document.querySelector(".slideshow");
 
 setInterval(() => {
