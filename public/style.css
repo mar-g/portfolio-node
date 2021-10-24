@@ -707,7 +707,7 @@ html {
   position: relative;
   display: block;
   height: 11rem;
-  cursor: default;
+  /* cursor: default; */
 }
 
 .service-btn span {
