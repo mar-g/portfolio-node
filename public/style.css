@@ -1039,5 +1039,8 @@ html {
   .featured-text {
     visibility: hidden;
   }
+  .section-2 {
+    padding: 10rem 1rem 15rem 1rem;
+  }
 }
 /* End of Responsive */
