@@ -311,6 +311,10 @@ html {
 /* End of Navigation */
 
 /* Section 1 */
+h1 {
+  font-size: 1.8rem;
+}
+
 .home {
   position: relative;
   width: 100%;
