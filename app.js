@@ -2,11 +2,13 @@ const path = require("path");
 const sgMail = require("@sendgrid/mail");
 const express = require("express");
 const app = express();
+const helmet = require("helmet");
 require("dotenv").config();
 
 const port = 3000;
 sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 
+app.use(helmet());
 app.use(express.static(path.join(__dirname, "public")));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
