@@ -360,27 +360,27 @@ h1 {
 }
 
 .circle-1 {
-  background: url(https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg)
+  background: url(/images/dev_icon/html5-original.svg)
     center no-repeat;
   background-size: 60%;
 }
 
 .circle-2 {
-  background: url(https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg)
+  background: url(/images/dev_icon/nodejs-original.svg)
     center no-repeat;
-  background-size: 60%;
+  background-size: 70%;
 }
 
 .circle-3 {
-  background: url(https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg)
+  background: url(/images/dev_icon/react-original.svg)
     center no-repeat;
   background-size: 70%;
 }
 
 .circle-4 {
-  background: url(https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg)
+  background: url(/images/dev_icon/javascript-original.svg)
     center no-repeat;
-  background-size: 70%;
+  background-size: 55%;
 }
 
 .main-circle {
