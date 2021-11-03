@@ -434,7 +434,8 @@ form.addEventListener("submit", (e) => {
           submit.nextElementSibling.style.visibility = "hidden";
           submit.nextElementSibling.style.opacity = "0";
         }, 4000);
-
+        submit.disabled = false;
+        submit.value = "Send Request";
         username.value = "";
         email.value = "";
         subject.value = "";
@@ -444,7 +445,11 @@ form.addEventListener("submit", (e) => {
     xhr.send(JSON.stringify(formData));
   };
 
-  !notValid && sendForm();
+  if (!notValid) {
+    submit.value = "Sending...";
+    submit.disabled = true;
+    sendForm();
+  }
 });
 // End of Form Validation
 // End of Section 5

@@ -360,26 +360,22 @@ h1 {
 }
 
 .circle-1 {
-  background: url(/images/dev_icon/html5-original.svg)
-    center no-repeat;
+  background: url(/images/dev_icon/html5-original.svg) center no-repeat;
   background-size: 60%;
 }
 
 .circle-2 {
-  background: url(/images/dev_icon/nodejs-original.svg)
-    center no-repeat;
+  background: url(/images/dev_icon/nodejs-original.svg) center no-repeat;
   background-size: 70%;
 }
 
 .circle-3 {
-  background: url(/images/dev_icon/react-original.svg)
-    center no-repeat;
+  background: url(/images/dev_icon/react-original.svg) center no-repeat;
   background-size: 70%;
 }
 
 .circle-4 {
-  background: url(/images/dev_icon/javascript-original.svg)
-    center no-repeat;
+  background: url(/images/dev_icon/javascript-original.svg) center no-repeat;
   background-size: 55%;
 }
 
@@ -1012,6 +1008,10 @@ h1 {
   .slideshow-link img {
     padding: 0 1.1rem;
   }
+
+  .form-heading {
+    font-size: 5rem;
+  }
 }
 
 @media (max-width: 600px) {
@@ -1029,10 +1029,6 @@ h1 {
   .navbar {
     justify-content: center;
     padding: 0;
-  }
-
-  .form-heading {
-    font-size: 5rem;
   }
 }
 
