@@ -319,14 +319,14 @@ formInputs.forEach((input) => {
   input.addEventListener("focus", () => {
     formHeading.style.opacity = "0";
     setTimeout(() => {
-      formHeading.textContent = `Your ${input.placeholder}`;
+      formHeading.textContent = input.placeholder;
       formHeading.style.opacity = "1";
     }, 300);
   });
   input.addEventListener("blur", () => {
     formHeading.style.opacity = "0";
     setTimeout(() => {
-      formHeading.textContent = "Let`s Talk";
+      formHeading.textContent = "Napisz do mnie";
       formHeading.style.opacity = "1";
     }, 300);
   });
@@ -377,14 +377,14 @@ const success = (input) => {
 const checkRequiredFields = (inputArr) => {
   inputArr.forEach((input) => {
     if (input.value.trim() === "") {
-      error(input, `${input.id} is required`);
+      error(input, "Pole wymagane");
     }
   });
 };
 
 const checkLength = (input, min) => {
   if (input.value.trim().length < min) {
-    error(input, `${input.id} must be at least ${min} characters`);
+    error(input, `Pole musi mieć minimum ${min} znaki`);
   } else {
     success(input);
   }
@@ -397,7 +397,7 @@ const checkEmail = (input) => {
   if (regEx.test(input.value.trim())) {
     success(input);
   } else {
-    error(input, "Email is not valid");
+    error(input, "Email niepoprawny");
   }
 };
 
@@ -405,7 +405,7 @@ form.addEventListener("submit", (e) => {
   e.preventDefault();
   checkLength(username, 2);
   checkLength(subject, 2);
-  checkLength(message, 10);
+  checkLength(message, 3);
   checkEmail(email);
   checkRequiredFields([username, email, subject, message]);
 
@@ -435,7 +435,7 @@ form.addEventListener("submit", (e) => {
           submit.nextElementSibling.style.opacity = "0";
         }, 4000);
         submit.disabled = false;
-        submit.value = "Send Request";
+        submit.value = "Wyślij";
         username.value = "";
         email.value = "";
         subject.value = "";
@@ -446,7 +446,7 @@ form.addEventListener("submit", (e) => {
   };
 
   if (!notValid) {
-    submit.value = "Sending...";
+    submit.value = "Wysyłam...";
     submit.disabled = true;
     sendForm();
   }
