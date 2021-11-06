@@ -6,6 +6,16 @@ const helmet = require("helmet");
 
 const port = 3000;
 
+app.set('trust proxy', true);
+app.use((req, res, next) => {
+  const host = req.header('host');
+  if (host.match(/^www\..*/i)) {
+    res.redirect(301, `${req.protocol}://${host.substring(4)}${req.url}`);
+  } else {
+    next();
+  }
+});
+
 app.use(helmet());
 app.use(express.static(path.join(__dirname, "public")));
 app.use(express.urlencoded({ extended: true }));
