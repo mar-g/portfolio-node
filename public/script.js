@@ -232,13 +232,13 @@ projects.forEach((project, i) => {
 
     projectHideBtn.classList.add("change");
 
-    projectHideBtn.onclick = () => {
+    projectHideBtn.addEventListener("click", () => {
       projectHideBtn.classList.remove("change");
       bigImgWrapper.remove();
       document.body.style.overflowY = "scroll";
       document.addEventListener("scroll", scrollFn);
       progressBarFn();
-    };
+    });
   });
   // End of Big Project Image
 
