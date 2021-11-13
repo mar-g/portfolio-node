@@ -193,9 +193,19 @@ html {
   position: fixed;
   width: 100%;
   height: 100vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url(images/bg.jpg) center no-repeat;
-  background-size: cover;
+  /* background-color: red; */
+  /* object-fit: contain; */
+  /* background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), */
+    /* url(images/bg.jpg) center no-repeat; */
+  /* background-size: cover; */
+}
+
+.page-bg img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  filter: brightness(0.3);
+  /* display: block; */
 }
 /* End of Page BG */
 
@@ -392,7 +402,9 @@ h1 {
   transition: left 2s, top 2s;
   top: 0;
   left: 0;
-  opacity: 0.5;
+  /* opacity: 0.5; */
+  filter: brightness(0.6);
+
 }
 /* End of Animated Circles */
 
@@ -915,11 +927,6 @@ h1 {
     display: none;
   }
 
-  /* .mouse-circle,
-  .mouse-dot {
-    display: none;
-  } */
-
   .navbar-link {
     margin: 0 2rem;
   }
@@ -933,7 +940,8 @@ h1 {
   }
 
   .project-hide-btn {
-    right: 2rem;
+    right: 2.5rem;
+    font-size: 1.7rem;
   }
 
   .service-btn {

@@ -238,7 +238,7 @@ projects.forEach((project, i) => {
       document.body.style.overflowY = "scroll";
       document.addEventListener("scroll", scrollFn);
       progressBarFn();
-    });
+    }, { once: true });
   });
   // End of Big Project Image
 
@@ -281,8 +281,8 @@ projectsBtn.addEventListener("click", (e) => {
   projectsBtn.firstElementChild.nextElementSibling.classList.toggle("change");
 
   showHideBool
-    ? (projectsBtnText.textContent = "Show Less")
-    : (projectsBtnText.textContent = "Show More");
+    ? (projectsBtnText.textContent = "Zwiń")
+    : (projectsBtnText.textContent = "Więcej");
 
   projects.forEach((project, i) => {
     i >= 6 &&
