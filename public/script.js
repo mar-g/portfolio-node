@@ -180,7 +180,7 @@ menuIcon.addEventListener("click", () => {
 //About Me Text
 const aboutMeText = document.querySelector(".about-me-text");
 const aboutMeTextContent =
-  "Lorem ółżęćń Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum";
+  "Z wykształcenia administrator sieci komputerowych a z zamiłowania programista (kiedyś Pascal - dziś JavaScript) starający się - zawsze - dążyć do celu jaki sobie wyznaczył. Cały czas staram się szlifować swoje umiejętności, nie boję się zmian i nowych wyzwań. Cenię sobie możliwość rozwoju.";
 
 Array.from(aboutMeTextContent).forEach((char) => {
   const span = document.createElement("span");

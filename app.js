@@ -7,6 +7,7 @@ const helmet = require("helmet");
 const port = 3000;
 
 app.set('trust proxy', true);
+
 app.use((req, res, next) => {
   const host = req.header('host');
   if (host.match(/^www\..*/i)) {
