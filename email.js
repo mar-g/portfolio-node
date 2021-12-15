@@ -14,7 +14,7 @@ const sendEmail = (req, res) => {
       text: `Email from: ${req.body.name} (${req.body.email}) Message: ${req.body.message}`,
     })
     .then(() => {
-      console.log("Email sent");
+      console.log("Wyslano");
     })
     .catch((error) => {
       console.log(error.response.body);

@@ -428,7 +428,7 @@ form.addEventListener("submit", (e) => {
       if (this.readyState == 4 && this.status == 200) {
         submit.nextElementSibling.style.visibility = "visible";
         submit.nextElementSibling.style.opacity = "1";
-        submit.nextElementSibling.textContent = "Email sent";
+        submit.nextElementSibling.textContent = "Wysłano";
 
         setTimeout(() => {
           submit.nextElementSibling.style.visibility = "hidden";
